@@ -14,9 +14,8 @@
 .nav-logo-flex-item {
     align-self: flex-start;
 }
-
 .nav-link-flex-item {
-    align-self: flex-end;
+    align-self: stretch;
 }
 
 
