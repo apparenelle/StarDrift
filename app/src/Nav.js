@@ -2,16 +2,15 @@
 import './App.css'
 import companyLogo from './assets/generic_logo.jpeg';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-
+import {NewsLetter} from './News.js';
+//import ReactDOM from 'react-dom/client';
 
 function NavBar() {
     return(
         <div className="upper-sectional">
             <div className="nav-flex-container">
                 <div className="nav-logo-flex-container">
-                    <img className="nav-logo" src={companyLogo} />
+                    <img className="nav-logo" src={companyLogo} alt="Adrian's Logo" />
                 </div>
                 
                 <div className="nav-link-flex-container">
@@ -23,19 +22,21 @@ function NavBar() {
                     </ul>
                 </div>           
             </div>
-            <div className="nav-news-container" id="news-drop" onLoad={grabNews()}>
-
+            <div className="nav-news-container">
+                <NewsLetter text="This is the fucking news"/>
             </div>
         </div>  
     );
 }
 
-function grabNews() {
-    // console.log("News was called");
-    // const news = React.createElement("p");
-    // news.innerText = "This is the news";
-    // React.getElementsById("news-drop").appendChild(news);
-}
+// function grabNews() {
+//     const title = React.createElement('p', {}, 'This is the news');
+//     document.getElementById("news-drop").appendChild(title)
+//     console.log("News was called");
+//     const news = React.createElement("p");
+//     news.innerText = "This is the news";
+//     React.getElementsById("news-drop").appendChild(news);
+// }
 
 
 
