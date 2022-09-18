@@ -1,9 +1,11 @@
 import logo from './logo.svg';
+import Bar from './Nav.js'
 import './App.css';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
+      < Bar/>
       <h1>Welcome to my digital portfolio!</h1>
       <h2>It is {new Date().toLocaleTimeString()} in New York!</h2>
     </div>
