@@ -1,11 +1,41 @@
-/* Creating a horizontal navigation bar */
-.nav ul {
+.nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
 }
 
+/* Creating a horizontal navigation bar */
+.nav-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+}
+
+.nav-link-flex-container { 
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-self: flex-end; */
+}
+
+/*This is what needs work*/
 .nav ul li {
     display: inline;
     padding: 10px;
+}
+/*---------------------------------*/
+
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.nav-logo-flex-container {
+    display: flex;
+    width: 20%;
+    /* justify-content: center; */
+    align-items: center;
 }
