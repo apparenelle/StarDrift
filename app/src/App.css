@@ -1,9 +1,28 @@
+/* background-color: #d1ebea; */
+body {
+    background-color: #cedee0;
+}
+
 .upper-sectional {
     display: flex;
     flex-direction: column;
 }
+.first-sectional {
+    display: flex;
+    width:100%;
+    height: 500px;
+    background: url('./assets/nyc_bg_image.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .nav-news-container {
-    align-self: center
+    align-self: center;
+}
+.nav-news-container h5{
+    margin: 0px;
+    padding: 5px;
 }
 
 /*----------Nav based CSS----------*/
@@ -11,12 +30,13 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 0px;
+    margin-left: -25%;
     padding: 0px;
 }
+/*Padding-left controls space between links*/
 .nav-links li{
-    margin: 15px;
-    padding: 5px;
+    margin: 5px;
+    padding-left: 30px;
 }
 
 /* Creating a horizontal navigation bar */
@@ -53,6 +73,6 @@
 .nav-logo{
     width: 50px;
     height: 50px;
-    margin: 10px;
+    margin: 5px;
 }
 /*----------End of Nav based CSS----------*/
