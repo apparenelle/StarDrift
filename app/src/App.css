@@ -7,72 +7,116 @@ body {
     display: flex;
     flex-direction: column;
 }
-.first-sectional {
-    display: flex;
-    width:100%;
-    height: 500px;
-    background: url('./assets/nyc_bg_image.jpeg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.nav-news-container {
-    align-self: center;
-}
-.nav-news-container h5{
-    margin: 0px;
-    padding: 5px;
-}
-
-/*----------Nav based CSS----------*/
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-left: -25%;
-    padding: 0px;
-}
-/*Padding-left controls space between links*/
-.nav-links li{
-    margin: 5px;
-    padding-left: 30px;
-}
 
 /* Creating a horizontal navigation bar */
 .nav-flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    background-color: #a6a6a6;
     /* justify-content: space-between; */
 }
-
-.nav-link-flex-container { 
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* align-self: flex-end; */
-}
-
-/*This is what needs work*/
-
-/*---------------------------------*/
-
-
+/* Start of Nav Logo */
 .nav-logo-flex-container {
     display: flex;
     width: 20%;
-    /* justify-content: center; */
     align-items: center;
-}
-.nav ul li {
-    display: inline;
-    padding: 10px;
 }
 .nav-logo{
     width: 50px;
     height: 50px;
     margin: 5px;
 }
+/* End of Nav-Logo */
+/* Start of Nav-Links */
+
+
+.nav-link-flex-container { 
+    position:absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-self: flex-end; */
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* margin-left: -25%; */
+    padding: 0px;
+}
+.nav-links ul{
+    align-self: center;
+}
+/*Padding-left controls space between links*/
+.nav-links li{
+    margin: 5px;
+    /* padding-left: 30px; */
+}
+
+.nav-links li a{
+    text-decoration: none;
+    /* display: inline; */
+    padding: 20px 32px;
+    color: black;
+}
+.nav-links li:hover{
+    color: black;
+}
+/* End of Nav-Links */
+
+
+
+
+/*---------------------------------*/
+
+
+
+
+
+
+
+/* Start of Nav News */
+.nav-news-container {
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    background-color: black;
+    width: 100%;
+}
+.nav-news{
+    align-self: center;
+}
+
+.nav-news h5{
+    margin: 0px;
+    padding: 5px;
+    color: white;
+}
+/* End of Nav News */
+
 /*----------End of Nav based CSS----------*/
+
+.first-sectional {
+    display: flex;
+    width:100%;
+    height: 600px;
+    background: url('./assets/grayscale.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    
+    
+    
+    
+    /* background: url('./assets/grayscale.jpg') no-repeat center center fixed; */
+
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+

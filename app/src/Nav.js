@@ -23,7 +23,10 @@ function NavBar() {
                 </div>           
             </div>
             <div className="nav-news-container">
-                <NewsLetter text="This is the fucking news"/>
+                <div className='nav-news'>
+                    <NewsLetter text="This is the fucking news"/>
+                </div>
+                
             </div>
         </div>  
     );
