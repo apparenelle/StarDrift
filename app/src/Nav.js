@@ -1,6 +1,6 @@
 //import all images and documents and us js to call them.
 import './App.css'
-import companyLogo from './assets/generic_logo.jpeg';
+import companyLogo from './assets/aeydran_animated.png';
 import React from 'react';
 import {NewsLetter} from './News.js';
 //import ReactDOM from 'react-dom/client';
