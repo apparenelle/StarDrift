@@ -18,7 +18,7 @@ function NavBar() {
                         <li><a href='#'>Home</a></li>
                         <li><a href='#'>Projects</a></li>
                         <li><a href='#'>About Me</a></li>
-                        <li><a href='#'>Donate</a></li>
+                        <li><a href='#'>Skills</a></li>
                     </ul>
                 </div>           
             </div>

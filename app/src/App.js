@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import Bar from './Nav.js';
-import {First} from './First.js'
+import {First} from './First.js';
+import {Second} from './Second.js';
+import {Third} from './Third.js';
+import {Fourth} from './Fourth.js';
+import {Footer} from './Footer.js';
 import './App.css';
 
 function App() {
@@ -8,9 +12,13 @@ function App() {
     <div className="App">
       <Bar/>
       <First />
+      <Second />
+      <Third />
+      <Fourth />
+      <Footer />
 
-      <h1>Welcome to my digital portfolio!</h1>
-      <h2>It is {new Date().toLocaleTimeString()} in New York!</h2>
+      {/* <h1>Welcome to my digital portfolio!</h1>
+      <h2>It is {new Date().toLocaleTimeString()} in New York!</h2> */}
     </div>
   );
 
