@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import greetingPhoto from './assets/grayscale.jpg';
+import greetingPhoto from './assets/gerald.png';
 
 export class First extends React.Component {
     render(){

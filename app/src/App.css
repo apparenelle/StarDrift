@@ -1,6 +1,11 @@
 /* background-color: #d1ebea; */
+@font-face {
+    font-family: "Open-Sans";
+    src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+}
 body {
     background-color: white;
+    font-family: Open-Sans, Arial, Helvetica;
 }
 
 .upper-sectional {
@@ -13,7 +18,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: #a6a6a6;
+    background-color: #683B2B;
     /* justify-content: space-between; */
 }
 /* Start of Nav Logo */
@@ -59,7 +64,7 @@ body {
     text-decoration: none;
     /* display: inline; */
     padding: 20px 32px;
-    color: black;
+    color: white;
 }
 .nav-links li:hover{
     color: black;
@@ -103,6 +108,7 @@ body {
     flex-direction: row;
     width:100%;
     height: 600px;
+    background-color: #FAF6F2;
     /* background: url('./assets/grayscale.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -116,11 +122,11 @@ body {
 
 
 .photo-flex{
-    width:70%;
+    width:60%;
     height: 100%
 }
 .greeting-flex{
-    width: 30%;
+    width: 40%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -136,12 +142,18 @@ body {
 .second-sectional{
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 300px;
     flex-direction: column;
     align-items: center;
+    background-color: #DED1BD;
 }
 .skills-flex-container{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    
     width: 90%;
 }
 /* End of Second Sectional */
@@ -149,15 +161,20 @@ body {
     display: flex;
     width: 100%;
     height: 400px;
+    background-color: #D49E8D;
 }
 .fourth-sectional{
     display: flex;
     width: 100%;
     height: 400px;
+    background-color: #B08401;
 }
 .footer-sectional{
     display: flex;
     width: 100%;
     height: 100px;
-    background-color: #a6a6a6;
+    background-color: #693B2B;
 }
+
+
+/* save this color Honeydew: #F0FFF0 */

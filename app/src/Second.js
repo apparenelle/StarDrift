@@ -8,10 +8,10 @@ export class Second extends React.Component{
                 <h2>Skills</h2>
                 <div className='skills-flex-container'>
                     <div className='skills-flex-item'>
-                        <button>Trading</button>
-                        <button>Coding</button>
-                        <button>Engineering</button>
-                        <button>Photography</button>
+                        <a href='#'>Trading</a>
+                        <a href='#'>Coding</a>
+                        <a href='#'>Engineering</a>
+                        <a href='#'>Photography</a>
                     </div>
                 </div>
 
