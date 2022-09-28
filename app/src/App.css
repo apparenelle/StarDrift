@@ -151,11 +151,37 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    
     width: 90%;
 }
+.skills-flex-container a{
+    color: black;
+    text-decoration: none;
+    padding: 7%;
+    border-radius: 10px;
+}
+#skills-trading{
+    background-image: url('https://media.giphy.com/media/4qbCWW4WwDpoYtzj6S/giphy.gif');
+    background-position: center;
+    background-size: 100%;
+    font-size: large;
+    /* background-repeat: no-repeat; */
+    color: white;
+}
+#skills-coding{
+
+}
+#skills-engineering{
+
+}
+/* must get rid of html link and store locally */
+#skills-photography{
+    background-image: url('https://media.giphy.com/media/Ma0X1M9lQB4FruMaX3/giphy.gif');
+    background-position: center;
+    color: white;
+}
+
 /* End of Second Sectional */
 .third-sectional{
     display: flex;
