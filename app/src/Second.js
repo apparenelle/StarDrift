@@ -9,7 +9,7 @@ export class Second extends React.Component{
                 <div className='skills-flex-container'>
                     {/* skills-flex-container is also a flex item */}
                         <a href='#'>
-                            <div className='skills-trading-image'></div>
+                            <img className='skills-trading-image'></img>
                             <div className='skills-trading-label'><h5>Trading</h5></div>
                         </a>
                         
