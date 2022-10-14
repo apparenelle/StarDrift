@@ -26,6 +26,7 @@ body {
     display: flex;
     width: 20%;
     align-items: center;
+    margin-left: 40px;
 }
 .nav-logo{
     width: 50px;
@@ -48,7 +49,6 @@ body {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    /* margin-left: -25%; */
     padding: 0px;
 }
 .nav-links ul{
@@ -57,6 +57,7 @@ body {
 /*Padding-left controls space between links*/
 .nav-links li{
     margin: 5px;
+    height: 100%;
     /* padding-left: 30px; */
 }
 
@@ -66,8 +67,10 @@ body {
     padding: 20px 32px;
     color: white;
 }
-.nav-links li:hover{
-    color: black;
+.nav-links li a:hover{
+    /* Turns whole bar black  */
+    /* background-color: black; */
+    color:black;
 }
 /* End of Nav-Links */
 
@@ -147,7 +150,7 @@ body {
     align-items: center;
     background-color: #DED1BD;
 }
-.skills-flex-container{
+.collective-skills-flex-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,40 +159,62 @@ body {
     width: 90%;
     height: 90%;
 }
-.skills-flex-container a{
+.collective-skills-flex-container .skill-box-layout{
     display: flex;
     flex-direction: column;
     width: 22%;
     height: 80%;
+    /* font: Arial; */
     /* padding: 0px; */
 }
-.skills-trading-image{
-    border-radius: 10px;
-
-    width:100%;
-    height: 80%;
-    background-image: url('https://media.giphy.com/media/4qbCWW4WwDpoYtzj6S/giphy.gif');
-    background-position: center;
-    background-size: 100%;
-    width:auto;
-    height: auto;
-}
-.skills-trading-label{
+.skill-box-layout{
+    /* This is the anchor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     color: black;
 }
 
-
-#skills-coding{
+.skills-trading-image{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
 
 }
-#skills-engineering{
+.skills-trading-label{
+    /* color: white; */
+}
+
+.skills-coding-image{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
 
 }
-/* must get rid of html link and store locally */
-#skills-photography{
-    background-image: url('https://media.giphy.com/media/Ma0X1M9lQB4FruMaX3/giphy.gif');
-    background-position: center;
-    color: white;
+.skills-coding-label{
+    /* color: white; */
+}
+
+.skills-engineering-image{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.skills-engineering-label{
+    /* color: white; */
+}
+
+.skills-photography-image{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.skills-photography-label{
+    /* color: white; */
 }
 
 /* End of Second Sectional */

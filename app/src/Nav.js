@@ -10,7 +10,8 @@ function NavBar() {
         <div className="upper-sectional">
             <div className="nav-flex-container">
                 <div className="nav-logo-flex-container">
-                    <img className="nav-logo" src={companyLogo} alt="Adrian's Logo" />
+                    <h4>Aeydran</h4>
+                    {/* <img className="nav-logo" src={companyLogo} alt="Adrian's Logo" /> */}
                 </div>
                 
                 <div className="nav-link-flex-container">
