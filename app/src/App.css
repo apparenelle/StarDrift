@@ -111,7 +111,7 @@ body {
     flex-direction: row;
     width:100%;
     height: 600px;
-    background-color: #FAF6F2;
+    background-color: #DED1BD;
     /* background: url('./assets/grayscale.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -148,7 +148,7 @@ body {
     height: 400px;
     flex-direction: column;
     align-items: center;
-    background-color: #DED1BD;
+    background-color: #D49E8D;
 }
 .collective-skills-flex-container{
     display: flex;
@@ -218,24 +218,66 @@ body {
 }
 
 /* End of Second Sectional */
+/* Start of Third Sectional */
 .third-sectional{
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: #D49E8D;
+    background-color: #B08401;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+.projects-items-flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+}
+.projects-items-flex-container a{
+    width: 50%;
+}
+/* End of Third Sectional */
+/* Start of Fourth Sectional */
 .fourth-sectional{
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: #B08401;
+    background-color: #693B2B;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+/* End of Fourth Sectional */
+/* Start of Footer */
 .footer-sectional{
     display: flex;
     width: 100%;
     height: 100px;
-    background-color: #693B2B;
+    background-color: #48494B;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+.footer-content-flex{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    /* height: 90%; */
+}
+.footer-links-flex{
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
+    height: 50%;
 
+}
+.footer-links-flex a{
+    text-decoration: none;
+    color: white;
+}
+/* End of Footer */
 
 /* save this color Honeydew: #F0FFF0 */
