@@ -8,7 +8,6 @@ import {Footer} from './Footer.js';
 import './App.css';
 import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
 
-
 function App() {
   return ( 
     <div className="App">

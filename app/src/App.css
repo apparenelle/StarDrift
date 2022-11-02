@@ -81,10 +81,6 @@ body {
 
 
 
-
-
-
-
 /* Start of Nav News */
 .nav-news-container {
     display: flex;
@@ -126,7 +122,15 @@ body {
 
 .photo-flex{
     width:60%;
-    height: 100%
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.photo-selfie{
+    width: 500px;
+    height: 500px;
 }
 .greeting-flex{
     width: 40%;
@@ -136,16 +140,13 @@ body {
     align-items: center;
 
 }
-.photo-selfie{
-    width: 100%;
-    height: 100%;
-}
+
 
 /* Beginning of Second Sectional */
 .second-sectional{
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 550px;
     flex-direction: column;
     align-items: center;
     background-color: #D49E8D;
@@ -249,35 +250,55 @@ body {
     justify-content: center;
     align-items: center;
 }
+.box-layout-flex-row-container-4-with_img{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+.experience-items-flex-container{
+    display: flex;
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 /* End of Fourth Sectional */
 /* Start of Footer */
 .footer-sectional{
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 125px;
     background-color: #48494B;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     color: white;
 }
-.footer-content-flex{
-    width: 90%;
+
+.footer-links-flex{
     display: flex;
     flex-direction: row;
-    /* height: 90%; */
-}
-.footer-links-flex{
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 80%;
-    height: 50%;
+    height: 20%;
 
 }
 .footer-links-flex a{
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 15px;
+
     text-decoration: none;
     color: white;
 }
 /* End of Footer */
-
-/* save this color Honeydew: #F0FFF0 */
+/* saving this color Honeydew: #F0FFF0 */
