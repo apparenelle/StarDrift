@@ -1,58 +1,327 @@
+/* Globlal */
+
+/* background-color: #d1ebea; */
+@font-face {
+    font-family: "Open-Sans";
+    src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
+}
+html{
+    overflow: auto;
+}
+body {
+    background-color: #683B2B;
+    font-family: Open-Sans, Arial, Helvetica;
+    overflow: auto;
+
+}
+
+/*----------Start of Nav----------*/
 .upper-sectional {
     display: flex;
     flex-direction: column;
 }
-.nav-news-container {
-    align-self: center
-}
-
-/*----------Nav based CSS----------*/
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-.nav-links li{
-    margin: 15px;
-    padding: 5px;
-}
-
-/* Creating a horizontal navigation bar */
 .nav-flex-container {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* justify-content: space-between; */
+    background-color: #683B2B;
 }
+.nav-logo-flex-container {
+    display: flex;
+    /* width: 25%; */
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
 
+}
+.nav-logo-flex-container h4{
+    color: white;
+}
 .nav-link-flex-container { 
     width: 80%;
     display: flex;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
-    /* align-self: flex-end; */
+    flex-basis: 80%;
+}
+.nav-links {
+    margin-left:-25%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0px; /* Necessary to keep padding off */
+ }
+
+.nav-links li{
+    margin: 0.45em;
+}
+.nav-links li a{
+    text-decoration: none;
+    padding: 10em 1em;
+    color: white;
+}
+.nav-links li a:hover{  
+    color:black;
 }
 
-/*This is what needs work*/
-
-/*---------------------------------*/
-
-
-.nav-logo-flex-container {
+/* Start of Nav News */
+.nav-news-container {
     display: flex;
-    width: 20%;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+}
+.nav-news{
+    align-self: center;
+}
+
+.nav-news h5{
+    margin: 0px;
+    padding: .4rem;
+    color: white;
+}
+/*------------------------------------------------------------------*/
+
+@keyframes slide-in {
+    0%      {opacity: 0; margin-left:-100%;}
+    25%     {opacity: 0.25; margin-left:-50%;}
+    50%     {opacity: 0.5; margin-left:-25%;}
+    75%     {opacity: 0.75; margin-left:-10%;}
+    100%    {opacity: 1; margin-left:0%;}
+}
+.first-sectional {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 600px;
+    background-color: #DED1BD;
+}
+
+
+.photo-flex{
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.photo-selfie{
+    width: 500px;
+    height: 500px;
+}
+.greeting-flex{
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: slide-in;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+
+}
+.greeting-flex h2{
+    text-align: center;
+}
+
+/*------------------------------------------------------------------*/
+/* Beginning of Second Sectional */
+.second-sectional{
+    display: flex;
+    width: 100%;
+    min-height: fit-content;
+    /* padding-top: 1em; */
+    /* height: 18em; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #D49E8D;
+}
+.second-sectional h2{
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+.collective-passions-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 2%;
+
+}
+.passion-box-layout{
+    /* This is the anchor */
+    display: flex;
+    width: 22%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.passion-image{
+    max-width:90%;
+    max-height: 85%;
+    border-radius: .5rem;
+}
+.passion-label{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+/* End of Second Sectional */
+/*------------------------------------------------------------------*/
+/* Start of Third Sectional */
+.third-sectional{
+    display: flex;
+    width: 100%;
+    min-height: fit-content;
+    background-color: #B08401;
+    flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+
 }
-.nav ul li {
-    display: inline;
-    padding: 10px;
+.third-sectional h2{
+    font-size: 1.5vw;
+    padding-bottom: 1%;
 }
-.nav-logo{
-    width: 50px;
-    height: 50px;
+.collective-projects-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 2%;
+}
+.projects-box-layout{
+    display: flex;
+    width: 45%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black; /*for link color*/
+}
+.projects-image{
+    max-width:90%;
+    max-height: 85%;
+    border-radius: .5rem;
+}
+.projects-label{
+    font-size: 1vw;
+    font-weight: bold;
+}
+/* End of Third Sectional */
+/*------------------------------------------------------------------*/
+/* Start of Fourth Sectional */
+.fourth-sectional{
+    display: flex;
+    width: 100%;
+    min-height: fit-content;
+    background-color: #693B2B;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.fourth-sectional h2{
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+.box-layout-flex-row-container-4-with_img{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+.experience-items-flex-container{
+    display: flex;
+    width: 25%;
     margin: 10px;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
 }
-/*----------End of Nav based CSS----------*/
+.experience-image{
+    /* Ensures all imagees are the same size */
+    width:22vw;
+    height: 16vw;
+    max-width:22vw;
+    max-height: 16vw;
+    border-radius: .5rem;
+    /* object-fit: fit; */
+}
+.experience-label{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+/*------------------------------------------------------------------*/
+
+/* Start of Footer */
+.footer-sectional{
+    display: flex;
+    width: 100%;
+    min-height: fit-content;
+    background-color: #48494B;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer-sectional h2{
+    font-size: 1.5vw;
+    /* padding-bottom: .5%; */
+    margin: 0rem;
+    margin-top: .75vw;
+    margin-bottom: .75vw;
+}
+
+.footer-links-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    width: 80%;
+    height: 20%;
+
+}
+.footer-links-flex a{
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
+}
+/*------------------------------------------------------------------*/
+/* saving this color Honeydew: #F0FFF0 */
+
+/* Mobile Design */
+@media (max-width: 1024px){
+    /* body {
+        background-color: black;
+        font-family: Open-Sans, Arial, Helvetica;
+        overflow: auto;
+    
+    }
+    .nav-link-flex-container{
+
+    } */
+}
