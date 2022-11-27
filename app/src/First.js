@@ -7,10 +7,11 @@ export class First extends React.Component {
         return (
             <div className='first-sectional'>
                 <div className='photo-flex'>
-                    <img className='photo-selfie' src={greetingPhoto} alt="Picture of Adrian"></img>
+                    <img className='photo-selfie' src={greetingPhoto} alt=""></img>
                 </div>
                 <div className='greeting-flex'>
-                    <h3>I am Adrian</h3>
+                    <h1>I am Adrian</h1>
+                    <h2>"Anyone can create but, only the fearless can be GREAT."</h2>
 
                 </div>
             </div>

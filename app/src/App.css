@@ -1,91 +1,76 @@
+/* Globlal */
+
 /* background-color: #d1ebea; */
 @font-face {
     font-family: "Open-Sans";
     src: local("Open-Sans"), url("./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype")
 }
+html{
+    overflow: auto;
+}
 body {
-    background-color: white;
+    background-color: #683B2B;
     font-family: Open-Sans, Arial, Helvetica;
+    overflow: auto;
+
 }
 
+/*----------Start of Nav----------*/
 .upper-sectional {
     display: flex;
     flex-direction: column;
 }
-
-/* Creating a horizontal navigation bar */
 .nav-flex-container {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #683B2B;
-    /* justify-content: space-between; */
 }
-/* Start of Nav Logo */
 .nav-logo-flex-container {
     display: flex;
-    width: 20%;
-    align-items: center;
-    margin-left: 40px;
-}
-.nav-logo{
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-}
-/* End of Nav-Logo */
-/* Start of Nav-Links */
-
-
-.nav-link-flex-container { 
-    position:absolute;
-    width: 100%;
-    display: flex;
+    /* width: 25%; */
+    flex-basis: 20%;
     align-items: center;
     justify-content: center;
-    /* align-self: flex-end; */
+    width: 20%;
+
+}
+.nav-logo-flex-container h4{
+    color: white;
+}
+.nav-link-flex-container { 
+    width: 80%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 80%;
 }
 .nav-links {
+    margin-left:-25%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: 0px;
-}
-.nav-links ul{
-    align-self: center;
-}
-/*Padding-left controls space between links*/
-.nav-links li{
-    margin: 5px;
-    height: 100%;
-    /* padding-left: 30px; */
-}
+    padding: 0px; /* Necessary to keep padding off */
+ }
 
+.nav-links li{
+    margin: 0.45em;
+}
 .nav-links li a{
     text-decoration: none;
-    /* display: inline; */
-    padding: 20px 32px;
+    padding: 10em 1em;
     color: white;
 }
-.nav-links li a:hover{
-    /* Turns whole bar black  */
-    /* background-color: black; */
+.nav-links li a:hover{  
     color:black;
 }
-/* End of Nav-Links */
-
-
-
-
-/*---------------------------------*/
-
-
 
 /* Start of Nav News */
 .nav-news-container {
     display: flex;
     flex-direction: column;
-    /* align-self: center; */
     background-color: black;
     width: 100%;
 }
@@ -95,33 +80,29 @@ body {
 
 .nav-news h5{
     margin: 0px;
-    padding: 5px;
+    padding: .4rem;
     color: white;
 }
-/* End of Nav News */
+/*------------------------------------------------------------------*/
 
-/*----------End of Nav based CSS----------*/
-
+@keyframes slide-in {
+    0%      {opacity: 0; margin-left:-100%;}
+    25%     {opacity: 0.25; margin-left:-50%;}
+    50%     {opacity: 0.5; margin-left:-25%;}
+    75%     {opacity: 0.75; margin-left:-10%;}
+    100%    {opacity: 1; margin-left:0%;}
+}
 .first-sectional {
     display: flex;
     flex-direction: row;
     width:100%;
     height: 600px;
     background-color: #DED1BD;
-    /* background: url('./assets/grayscale.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%; */
-    /* background: url('./assets/grayscale.jpg') no-repeat center center fixed; */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
 }
 
 
 .photo-flex{
-    width:60%;
+    width:40%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -133,25 +114,38 @@ body {
     height: 500px;
 }
 .greeting-flex{
-    width: 40%;
+    width: 60%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation-name: slide-in;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
 
 }
+.greeting-flex h2{
+    text-align: center;
+}
 
-
+/*------------------------------------------------------------------*/
 /* Beginning of Second Sectional */
 .second-sectional{
     display: flex;
     width: 100%;
-    height: 550px;
+    min-height: fit-content;
+    /* padding-top: 1em; */
+    /* height: 18em; */
     flex-direction: column;
     align-items: center;
     background-color: #D49E8D;
 }
-.collective-skills-flex-container{
+.second-sectional h2{
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+.collective-passions-flex-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -159,18 +153,14 @@ body {
     align-items: center;
     width: 90%;
     height: 90%;
+    padding-bottom: 2%;
+
 }
-.collective-skills-flex-container .skill-box-layout{
-    display: flex;
-    flex-direction: column;
-    width: 22%;
-    height: 80%;
-    /* font: Arial; */
-    /* padding: 0px; */
-}
-.skill-box-layout{
+.passion-box-layout{
     /* This is the anchor */
     display: flex;
+    width: 22%;
+    height: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -178,77 +168,78 @@ body {
     color: black;
 }
 
-.skills-trading-image{
-    width:100%;
-    height: 100%;
-    border-radius: 10px;
-
+.passion-image{
+    max-width:90%;
+    max-height: 85%;
+    border-radius: .5rem;
 }
-.skills-trading-label{
-    /* color: white; */
-}
-
-.skills-coding-image{
-    width:100%;
-    height: 100%;
-    border-radius: 10px;
-
-}
-.skills-coding-label{
-    /* color: white; */
-}
-
-.skills-engineering-image{
-    width:100%;
-    height: 100%;
-    border-radius: 10px;
-
-}
-.skills-engineering-label{
-    /* color: white; */
-}
-
-.skills-photography-image{
-    width:100%;
-    height: 100%;
-    border-radius: 10px;
-
-}
-.skills-photography-label{
-    /* color: white; */
+.passion-label{
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 /* End of Second Sectional */
+/*------------------------------------------------------------------*/
 /* Start of Third Sectional */
 .third-sectional{
     display: flex;
     width: 100%;
-    height: 400px;
+    min-height: fit-content;
     background-color: #B08401;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
 }
-.projects-items-flex-container{
+.third-sectional h2{
+    font-size: 1.5vw;
+    padding-bottom: 1%;
+}
+.collective-projects-flex-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
-    height: 70%;
+    height: 90%;
+    padding-bottom: 2%;
 }
-.projects-items-flex-container a{
-    width: 50%;
+.projects-box-layout{
+    display: flex;
+    width: 45%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black; /*for link color*/
+}
+.projects-image{
+    max-width:90%;
+    max-height: 85%;
+    border-radius: .5rem;
+}
+.projects-label{
+    font-size: 1vw;
+    font-weight: bold;
 }
 /* End of Third Sectional */
+/*------------------------------------------------------------------*/
 /* Start of Fourth Sectional */
 .fourth-sectional{
     display: flex;
     width: 100%;
-    height: 400px;
+    min-height: fit-content;
     background-color: #693B2B;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+.fourth-sectional h2{
+    font-size: 1.5vw;
+    padding-bottom: 1%;
 }
 .box-layout-flex-row-container-4-with_img{
     display: flex;
@@ -261,26 +252,45 @@ body {
 .experience-items-flex-container{
     display: flex;
     width: 25%;
+    margin: 10px;
+    flex-direction: column;
     text-decoration: none;
-    color: black;
+    color: white;
     justify-content: center;
     align-items: center;
 
 }
+.experience-image{
+    /* Ensures all imagees are the same size */
+    width:22vw;
+    height: 16vw;
+    max-width:22vw;
+    max-height: 16vw;
+    border-radius: .5rem;
+    /* object-fit: fit; */
+}
+.experience-label{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+/*------------------------------------------------------------------*/
 
-
-
-/* End of Fourth Sectional */
 /* Start of Footer */
 .footer-sectional{
     display: flex;
     width: 100%;
-    height: 125px;
+    min-height: fit-content;
     background-color: #48494B;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     color: white;
+}
+.footer-sectional h2{
+    font-size: 1.5vw;
+    /* padding-bottom: .5%; */
+    margin: 0rem;
+    margin-top: .75vw;
+    margin-bottom: .75vw;
 }
 
 .footer-links-flex{
@@ -288,6 +298,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 1.5vw;
     width: 80%;
     height: 20%;
 
@@ -295,10 +306,22 @@ body {
 .footer-links-flex a{
     margin-left: 4%;
     margin-right: 4%;
-    padding: 15px;
-
+    padding: 1vw;
     text-decoration: none;
     color: white;
 }
-/* End of Footer */
+/*------------------------------------------------------------------*/
 /* saving this color Honeydew: #F0FFF0 */
+
+/* Mobile Design */
+@media (max-width: 1024px){
+    /* body {
+        background-color: black;
+        font-family: Open-Sans, Arial, Helvetica;
+        overflow: auto;
+    
+    }
+    .nav-link-flex-container{
+
+    } */
+}

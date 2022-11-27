@@ -6,11 +6,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
+// These call components to render twice in dev once in prod --.StrictMode()
 root.render(
-  <React.StrictMode> 
-    <App />
-  </React.StrictMode>
+<React.StrictMode> 
+  <App />
+</React.StrictMode>
 );
 
 
