@@ -13,12 +13,15 @@ function App() {
   let width = window.innerWidth; 
   let isMobile = undefined;
   
-  if(width<750) {
+  if(width<900) {
     isMobile = true;
   }
   else {
     isMobile = false;
   }
+
+  //use State could go here
+  
 
   console.log(`This is initial width: ${width}px. Mobile: ${isMobile}.`);
   useEffect(() => {
@@ -35,15 +38,15 @@ function App() {
       console.log(`Window width is ${width}px. Are we in mobile mode: ${isMobile}.`); 
       // sleep(500);  
     });
-  }, [width]);
+  }, [width, isMobile]);
   return ( 
     <div className="App">
-      <Bar isMobile={isMobile}/>
-      <First isMobile={isMobile}/>
-      <Second isMobile={isMobile}/>
-      <Third isMobile={isMobile}/>
-      <Fourth isMobile={isMobile}/>
-      <Footer isMobile={isMobile}/>
+      <Bar marker={isMobile}/>
+      <First />
+      <Second />
+      <Third />
+      <Fourth />
+      <Footer />
 
       {/* <h1>Welcome to my digital portfolio!</h1>
       <h2>It is {new Date().toLocaleTimeString()} in New York!</h2> */}
