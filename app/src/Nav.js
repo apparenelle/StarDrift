@@ -6,7 +6,7 @@ import {NewsLetter} from './News.js';
 //import ReactDOM from 'react-dom/client';
 
 function NavBar(props) {
-    let isSmall = props.marker;
+    let isSmall = props.isMobile;
     // useEffect(() => {
     //     isSmall = props.marker;
       

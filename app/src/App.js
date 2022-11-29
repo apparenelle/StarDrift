@@ -10,10 +10,11 @@ import './fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf'
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  let width = window.innerWidth; 
+  let width = window.innerWidth;
+  let mobileWidth = 900; //in pixels swaps website over to mobile
   let isMobile = undefined;
   
-  if(width<900) {
+  if(width < mobileWidth) {
     isMobile = true;
   }
   else {
@@ -21,7 +22,7 @@ function App() {
   }
 
   //use State could go here
-  const [mobile, setIsMobile] = useState(isMobile);
+  const [mobileState, setIsMobile] = useState(isMobile);
 
   console.log(`This is initial width: ${width}px. Mobile: ${isMobile}.`);
 
@@ -29,7 +30,7 @@ function App() {
   useEffect(() => {
     window.addEventListener("resize", () =>{
       width = window.innerWidth;
-      if(width<900)
+      if(width<mobileWidth)
       {
         isMobile=true;
       }
@@ -39,26 +40,24 @@ function App() {
       }
       console.log(`Window width is ${width}px. Are we in mobile mode: ${isMobile}.`); 
       setIsMobile(isMobile);
-      // sleep(500);  
+      // sleep(500);  //only use to slow down in production if necessary
     });
   }, [width, isMobile]);
   return ( 
     <div className="App">
-      <Bar marker={mobile}/>
+      <Bar isMobile={mobileState}/>
       <First />
       <Second />
       <Third />
       <Fourth />
       <Footer />
-
-      {/* <h1>Welcome to my digital portfolio!</h1>
-      <h2>It is {new Date().toLocaleTimeString()} in New York!</h2> */}
     </div>
   );
 }
 
 function sleep(ms) {
   // console.log("I slept"); works -- supposed to slow down render calls
+  // use just in case too many calls are occuring
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
