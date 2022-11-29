@@ -21,9 +21,11 @@ function App() {
   }
 
   //use State could go here
-  
+  const [mobile, setIsMobile] = useState(isMobile);
 
   console.log(`This is initial width: ${width}px. Mobile: ${isMobile}.`);
+
+
   useEffect(() => {
     window.addEventListener("resize", () =>{
       width = window.innerWidth;
@@ -36,12 +38,13 @@ function App() {
         isMobile=false
       }
       console.log(`Window width is ${width}px. Are we in mobile mode: ${isMobile}.`); 
+      setIsMobile(isMobile);
       // sleep(500);  
     });
   }, [width, isMobile]);
   return ( 
     <div className="App">
-      <Bar marker={isMobile}/>
+      <Bar marker={mobile}/>
       <First />
       <Second />
       <Third />
