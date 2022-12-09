@@ -1,11 +1,13 @@
 //import all images and documents and us js to call them.
 import './App.css'
 // import companyLogo from './assets/aeydran_animated.png';
-import React, {useEffect} from 'react';
-import {NewsLetter} from './News.js';
+import React, { useEffect } from 'react';
+import { NewsLetter } from './News.js';
+import { Sandwich } from './Sandwich';
 //import ReactDOM from 'react-dom/client';
 
 function NavBar(props) {
+
     let isSmall = props.isMobile;
     // useEffect(() => {
     //     isSmall = props.marker;
@@ -46,12 +48,15 @@ function NavBar(props) {
                         <h4>Aeydran</h4>
                     </div>  
                     <div className="nav-link-flex-container">
-                        <ul className="nav-links">
+                        < Sandwich onClick={sandwichDance}/>
+                        
+                        
+                        {/* <ul className="nav-links">
                             <li><a href='#'>Home+1</a></li>
                             <li><a href='#'>Projects+2</a></li>
                             <li><a href='#'>About Me</a></li>
                             <li><a href='#'>Skills</a></li>
-                        </ul>
+                        </ul> */}
                     </div>           
                 </div>
                 <div className="nav-news-container">
@@ -63,6 +68,10 @@ function NavBar(props) {
             </div>  
         );
     }   
+}
+
+function sandwichDance() {
+    
 }
 
 export default NavBar;

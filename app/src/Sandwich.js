@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 
-export class Third extends React.Component{
+export class Sandwich extends React.Component{
     render(){
         return(
             <div className='mobile-sandwich'>
