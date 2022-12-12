@@ -4,6 +4,7 @@ import './App.css'
 import React, { useEffect } from 'react';
 import { NewsLetter } from './News.js';
 import { Sandwich } from './Sandwich';
+import { OverlayNav } from './OverlayNav';
 //import ReactDOM from 'react-dom/client';
 
 function NavBar(props) {
@@ -48,8 +49,8 @@ function NavBar(props) {
                         <h4>Aeydran</h4>
                     </div>  
                     <div className="nav-link-flex-container">
-                        < Sandwich onClick={sandwichDance}/>
-                        
+                        < Sandwich />
+                        < OverlayNav/>
                         
                         {/* <ul className="nav-links">
                             <li><a href='#'>Home+1</a></li>
@@ -68,10 +69,6 @@ function NavBar(props) {
             </div>  
         );
     }   
-}
-
-function sandwichDance() {
-    
 }
 
 export default NavBar;

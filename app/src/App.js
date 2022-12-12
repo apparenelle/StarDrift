@@ -14,7 +14,7 @@ function App() {
   let mobileWidth = 900; //in pixels swaps website over to mobile
   let isMobile = undefined;
   
-  if(width < mobileWidth) {
+  if (width < mobileWidth) {
     isMobile = true;
   }
   else {
@@ -44,8 +44,8 @@ function App() {
     });
   }, [width, isMobile]);
   return ( 
-    <div className="App">
-      <Bar isMobile={mobileState}/>
+    <div className="App" id='app'>
+      <Bar isMobile={mobileState} />
       <First />
       <Second />
       <Third />
