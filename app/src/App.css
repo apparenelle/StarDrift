@@ -230,7 +230,7 @@ body {
 .fourth-sectional{
     display: flex;
     width: 100%;
-    min-height: fit-content;
+    /* min-height: fit-content; */
     background-color: #693B2B;
     flex-direction: column;
     justify-content: center;
@@ -252,6 +252,8 @@ body {
 .experience-items-flex-container{
     display: flex;
     width: 25%;
+    height: 100%;
+    object-fit: cover;
     margin: 10px;
     flex-direction: column;
     text-decoration: none;
@@ -260,15 +262,13 @@ body {
     align-items: center;
 
 }
-.experience-image{
-    /* Ensures all imagees are the same size */
-    width:90%;
-    height: 85%;
-    /* max-width:22%; */
-    /* max-height: 16%; */
+.experience-image {
+    /* Ensures all images are the same size */
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: cover;
     border-radius: .5rem;
-    /* object-fit: fit; */
-}
+  }
 .experience-label{
     font-size: 1.3vw;
     font-weight: 400;
