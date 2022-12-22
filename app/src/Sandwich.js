@@ -18,9 +18,7 @@ export function Sandwich() {
                 x.classList.toggle("change");
                 setMobileNavState(false);
                 closeMobileNav();
-    
-            }
-            
+            }   
         }
     }
     
