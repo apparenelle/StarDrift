@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Bar from './Nav.js';
 import {First} from './First.js';
 import {Second} from './Second.js';
@@ -11,7 +10,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
   let width = window.innerWidth;
-  let mobileWidth = 900; //in pixels swaps website over to mobile
+  let mobileWidth = 1080; //in pixels swaps website over to mobile
   let isMobile = undefined;
   
   if (width < mobileWidth) {

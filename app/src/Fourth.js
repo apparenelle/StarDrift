@@ -10,25 +10,57 @@ export class Fourth extends React.Component{
         return(
             <div className='fourth-sectional'>
                 <h2>Experiences</h2>
-                <div className='box-layout-flex-row-container-4-with_img'>
-                    <a  className='experience-items-flex-container' href='#'>
+                <div className='box-layout-flex-row-container'>
+                    {/* You gotta swap the anchors for divs and see if that fixes it */}
+
+                    <div  className='experience-items-flex-container'>
                         <img className='experience-image' src={nysJobLogo}></img>
                         <div className='experience-label'><p>State of New York</p></div>
-                    </a>
-                    <a className='experience-items-flex-container' href='#'>
+                    </div>
+                    <div className='experience-items-flex-container'>
                         <img className='experience-image' src={sculptorJobLogo}></img>
                         <div className='experience-label'><p>Sculptor Capital Management</p></div>
-                    </a>
-                    <a className='experience-items-flex-container' href='#'>
+                    </div>
+                    <div className='experience-items-flex-container'>
                         <img className='experience-image' src={bayernlbJobLogo}></img>
                         <div className='experience-label'><p>Bayerische LandesBank</p></div>
-                    </a>
-                    <a className='experience-items-flex-container' href='#'>
+                    </div>
+                    <div className='experience-items-flex-container'>
                         <img className='experience-image' src={anaDataJobLogo}></img>
                         <div className='experience-label'><p>Ana Data Consulting</p></div>
-                    </a>
+                    </div>
                 </div>
             </div>
         );
     }
 }
+
+
+
+// <div className='fourth-sectional'>
+//                 <h2>Experiences</h2>
+//                 <div className='box-layout-flex-row-container-4-with-img'>
+//                     {/* You gotta swap the anchors for divs and see if that fixes it */}
+
+//                     <div  className='experience-items-flex-container'>
+//                         {/* <div className='experience-image-container'>
+//                             <img className='experience-image' src={nysJobLogo}></img>
+//                         </div>
+//                         <div className='experience-label-container'>
+//                             <div className='experience-label'><p>State of New York</p></div>
+//                         </div> */}
+//                     </div>
+//                     <div className='experience-items-flex-container'>
+//                         <img className='experience-image' src={sculptorJobLogo}></img>
+//                         <div className='experience-label'><p>Sculptor Capital Management</p></div>
+//                     </div>
+//                     <div className='experience-items-flex-container'>
+//                         <img className='experience-image' src={bayernlbJobLogo}></img>
+//                         <div className='experience-label'><p>Bayerische LandesBank</p></div>
+//                     </div>
+//                     <div className='experience-items-flex-container'>
+//                         <img className='experience-image' src={anaDataJobLogo}></img>
+//                         <div className='experience-label'><p>Ana Data Consulting</p></div>
+//                     </div>
+//                 </div>
+//             </div>

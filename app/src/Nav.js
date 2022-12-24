@@ -10,12 +10,7 @@ import { OverlayNav } from './OverlayNav';
 function NavBar(props) {
 
     let isSmall = props.isMobile;
-    // useEffect(() => {
-    //     isSmall = props.marker;
-      
-    // }, [props.marker]);
     console.log(`Printing from navbar -- Value of isSmall: ${isSmall}`);
-    // console.log(props.marker);
     if(!isSmall) {
         return(
             <div className="upper-sectional">
@@ -70,5 +65,4 @@ function NavBar(props) {
         );
     }   
 }
-
 export default NavBar;

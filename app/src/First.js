@@ -11,7 +11,7 @@ export class First extends React.Component {
                 </div>
                 <div className='greeting-flex'>
                     <h1>I am Adrian</h1>
-                    <h2>"Anyone can create but, only the fearless can be GREAT."</h2>
+                    <h2>"Anyone can create but, only the fearless can be great."</h2>
                 </div>
             </div>
         );

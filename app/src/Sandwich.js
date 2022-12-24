@@ -21,7 +21,6 @@ export function Sandwich() {
             }   
         }
     }
-    
     return(
         <div className='mobile-sandwich' id="mobile-sandwich" onClick={() => sandwichDance()}>
             <div className='mobile-sandwich-1'></div>
@@ -48,14 +47,3 @@ function closeMobileNav(){
 
     console.log("nav was  closed");
 }
-
-
-// function showLinks(){
-//     var x = document.getElementById("mobile-sandwich");
-//     if (x.style.display === "flex") {
-//         x.style.display = "none";
-//     }
-//     else {
-//         x.style.display = "flex";
-//     }
-// }       
